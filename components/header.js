@@ -13,9 +13,7 @@ const Header = () => {
             </Link>
 
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Help</li>
+             
               <Link href={`../login`}>
                 <a style={{ "textdecoration": "none", color:"white" }}>Dashboard</a>
               </Link>

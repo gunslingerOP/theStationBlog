@@ -10,7 +10,7 @@ const Card = (props) => {
           border="0"
         />
         <h3>{props.article.title}</h3>
-        <p> By {props.article.athor}</p>
+        <p> By {props.article.author}</p>
         <div className="link">
           <Link href={`article/${props.article.id}`}> 
             <a >Read article</a>

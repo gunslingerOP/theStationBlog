@@ -7,7 +7,6 @@ const Sect1=(props)=>{
         <section id="section1">
         <div id="secondHeader">
     <h2 > {props.article.title}</h2>
-    <span>By {props.article.athor}</span>
     </div>
     <div id="date">
       <span>{moment(props.article.createdAt).format('ll')}</span>  

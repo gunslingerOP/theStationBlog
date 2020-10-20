@@ -4,24 +4,21 @@ import Card from "../components/card";
 import Foot from "../components/footer";
 
 const Home = (props) => {
-  console.log(props);
   return (
-    <>
-      <body>
+      <div>
         <Header />
 
         <main>
           <HomeCover />
           <section className="container blogCards">
-            {props.posts.articles.map((article) => (
-              <Card article={article} />
+            {props.posts.articles.map((article, index) => (
+              <Card key={index} article={article} />
             ))}
           </section>
 
           <Foot />
         </main>
-      </body>
-    </>
+      </div>
   );
 };
 
